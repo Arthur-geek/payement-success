@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paiement réussi</title>
+    <style>
+        .container{
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        h1{
+            font-size: 22px;
+        }
+    </style>
+    <script>
+        // Rediriger automatiquement vers l'application Flutter après quelques secondes
+        setTimeout(() => {
+            window.location.href = "myapp://payment-success";
+        }, 3000); // 3 secondes
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="check.png" alt="success" width="75px">
+        <h1>Merci pour votre paiement !</h1>
+        <p>Vous allez être redirigé vers l'application...</p>
+        <p>Si la redirection ne fonctionne pas, <a href="myapp://payment-success">cliquez ici</a>.</p>
+    </div>
+</body>
+</html>
